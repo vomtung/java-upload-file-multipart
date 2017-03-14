@@ -10,22 +10,17 @@ import java.net.URL;
 
 import org.apache.commons.io.IOUtils;
 
-public class UploadImageMultipart
+public class JavaUploadFileMultipart
 {
-    
     public static void main(String[] args)
     {
         System.out.println("UploadFileAndroid");
         String url = "http://192.168.103.52:8080/iwfa-am-rest/v2/files";
         String token = "c77c2a503bfc10302927c1bca7bf5f3c0bfb9f687b088315dd7af15d0e0967129362ebde84216a8c";
         String username = "npthinh@tma.com.vn";
-        //String srcFile = "/home/vmtung/workspace/example/src/example/aaa.jpg";
-        //String srcFile = "/home/vmtung/Downloads/bbb.jpg";
-        //String srcFile = "/home/vmtung/Documents/test_upload_abs.txt";
-        //String srcFile = "/home/vmtung/Pictures/aaa.jpg";
-        String srcFile = "/home/vmtung/Downloads/aaa.png";
-        
-        String fileStyle = "Avatar";
+        //String srcFile = "/home/vmtung/Downloads/aaa.pdf";
+        String srcFile = "/home/vmtung/Downloads/aaa.docx";
+        String fileStyle = "Cv";
         upload(url, token, username, srcFile, fileStyle);
         
     }
